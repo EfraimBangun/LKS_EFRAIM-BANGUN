@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Landing Page</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="navbar-container">
+            <div class="logo">
+               
+            </div>
+            <nav class="nav-list">
+              <ul>
+                  <li><a href="#beranda">Beranda</a></li>
+                  <li><a href="#sejarah">Sejarah</a></li>
+                  
+              </ul>
+          </nav>
+          
+        </header>
+        <section id="beranda" class="content-section">
+        
+     
+        <main>
+            <section id="beranda" class="content-section">
+                <div class="content">
+                    <div class="content-description">
+                        <h1 class="title">Sejarah Tentang Danau Toba</h1>
+                        <p>Danau Toba adalah sebuah danau vulkanik yang terletak di Pulau Sumatera, Indonesia. Danau ini merupakan danau vulkanik terbesar di dunia dan memiliki sejarah geologis yang menarik. Berikut adalah sejarah singkat tentang Danau Toba:
+
+                          Pembentukan Geologis:
+                          Danau Toba terbentuk sekitar 75.000 tahun yang lalu sebagai hasil dari letusan gunung berapi raksasa bernama Toba. Letusan ini dianggap sebagai salah satu letusan gunung berapi terbesar dalam sejarah bumi. Setelah letusan, kawah gunung tersebut terisi air hujan, membentuk danau yang luasnya mencapai lebih dari 1.700 km persegi.
+                          
+                          Kehidupan Prasejarah:
+                          Seiring berjalannya waktu, Danau Toba dan daerah sekitarnya menjadi tempat tinggal bagi suku-suku prasejarah. Bukti arkeologis menunjukkan keberadaan manusia di sekitar danau ini ribuan tahun yang lalu. Beberapa penelitian arkeologi menemukan sisa-sisa kehidupan manusia prasejarah dan alat-alat batu di sekitar Danau Toba.
+                          
+                          Kehidupan Suku Batak:
+                          Daerah sekitar Danau Toba menjadi rumah bagi suku Batak, yang terkenal dengan kebudayaan dan tradisi mereka. Suku Batak terbagi menjadi beberapa sub-etnis, seperti Batak Toba, Batak Karo, Batak Simalungun, dan Batak Mandailing. Mereka hidup sebagai masyarakat agraris dan memiliki kepercayaan dan kebudayaan yang unik.
+                          
+                          Pengaruh Kolonial Belanda:
+                          Pada abad ke-17, wilayah sekitar Danau Toba menjadi bagian dari Hindia Belanda. Kolonial Belanda memiliki pengaruh besar dalam mengelola dan mengatur daerah ini. Mereka mendirikan pos perdagangan di sekitar danau dan memengaruhi kehidupan masyarakat setempat.
+                          
+                          Pariwisata:
+                          Seiring berjalannya waktu, Danau Toba menjadi salah satu tujuan wisata populer di Indonesia. Keindahan alam dan budaya lokal menjadi daya tarik bagi wisatawan domestik maupun internasional. Pulau Samosir di tengah danau adalah destinasi yang terkenal, dihuni oleh masyarakat Batak Toba yang ramah.
+                          
+                          Ancaman Lingkungan:
+                          Meskipun Danau Toba menjadi daya tarik wisata, ada juga tantangan lingkungan yang dihadapi danau ini. Pencemaran dan perubahan iklim menjadi ancaman bagi ekosistem danau, dan upaya konservasi diperlukan untuk menjaga keberlanjutan danau ini.
+                          
+                          Danau Toba tidak hanya menjadi keajaiban alam yang menakjubkan, tetapi juga menyimpan sejarah yang kaya tentang pembentukan bumi dan perjalanan panjang masyarakat yang tinggal di sekitarnya.</p>
+                    
+                  </section>
+                
+                <section id="sejarah" class="content-section">
+                <div class="grid-item">
+              <img src="1.jpg" alt="Baju 1" />
+            </section>
+            <aside>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+        </main>
+        
+    </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">&#9650;</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", function () {
+      
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+
+    scrollToTopBtn.addEventListener("click", function () {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
+    });
+});
+
+
+</script>
+</body>
+</html>
